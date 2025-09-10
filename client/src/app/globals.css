@@ -13,8 +13,65 @@ body,
   height: 100%;
   width: 100%;
   @apply text-sm;
-  @apply bg-gray-500;
+  @apply bg-gray-50;
   @apply text-gray-900;
+}
+
+/* Dark mode styles */
+.dark {
+  @apply bg-gray-900;
+  @apply text-gray-100;
+}
+
+.dark body {
+  @apply bg-gray-900;
+  @apply text-gray-100;
+}
+
+/* Dark mode for components */
+.dark .bg-gray-50 {
+  @apply bg-gray-900;
+}
+
+.dark .bg-white {
+  @apply bg-gray-800;
+}
+
+.dark .text-gray-900 {
+  @apply text-gray-100;
+}
+
+.dark .text-gray-700 {
+  @apply text-gray-300;
+}
+
+.dark .text-gray-500 {
+  @apply text-gray-400;
+}
+
+/* Dark mode for settings page */
+.dark .bg-gray-800 {
+  @apply bg-gray-700;
+}
+
+.dark .hover\:bg-blue-50:hover {
+  @apply bg-gray-700;
+}
+
+.dark .bg-gray-200 {
+  @apply bg-gray-600;
+}
+
+.dark .peer-checked\:bg-blue-600:checked {
+  @apply bg-blue-500;
+}
+
+.dark .border-gray-300 {
+  @apply border-gray-600;
+}
+
+.dark .focus\:border-blue-500:focus {
+  @apply border-blue-400;
 }
 
 @media (min-width: 768px) {
